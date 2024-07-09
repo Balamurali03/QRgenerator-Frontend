@@ -1,0 +1,174 @@
+/* Styles for the QR Generator */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .url-input-container, .qr-result-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+  
+  label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input[type="url"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, box-shadow 0.2s;
+  }
+  .btn:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .round-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    background-color: transparent;
+    color: darkslategray;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  }
+  .round-button1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    color: darkslategray;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .round-button1:hover {
+    border: transparent;
+    color: #007bff !important;
+  }
+  .round-button:hover {
+    border: transparent;
+    color: #007bff !important;
+  }
+  .round-button:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  .round-button1:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .qr-result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+  
+  .qr-image {
+    margin-bottom: 10px;
+  }
+  
+  .download-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .download-buttons button {
+    margin: 0 5px;
+  }
+  
+  p {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  @media (min-width: 769px) {
+    /* .container {
+      flex-direction: row;
+      justify-content: space-between;
+    } */
+  
+    .url-input-container, .qr-result-container {
+      width: 48%;
+      margin-bottom: 0;
+    }
+  }
+  
