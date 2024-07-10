@@ -30,6 +30,7 @@ body {
   
   .url-input-container, .qr-result-container {
     position: relative;
+    width: 75% !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,6 +128,7 @@ body {
   
   .qr-result-container {
     display: flex;
+    width: 75%;
     flex-direction: column;
     align-items: center;
     padding: 20px;
